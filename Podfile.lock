@@ -36,7 +36,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ReactiveBeaver:
-    :commit: b83092b9af25e1bbb83dec691b4dee85e01b2407
+    :commit: 70462f7396df4fe332206a24b4bdd5d2abc8fc27
     :git: https://github.com/skyylex/ReactiveBeaver
 
 SPEC CHECKSUMS:
