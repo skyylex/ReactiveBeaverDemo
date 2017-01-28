@@ -20,28 +20,23 @@ PODS:
     - KissXML (~> 5.0)
     - KSCrypto (~> 1.2.2)
     - Mantle (~> 2.0)
-    - ReactiveCocoa (~> 2.5)
+    - ReactiveObjC (~> 2.0)
     - zipzap (~> 8.0)
-  - ReactiveCocoa (2.5):
-    - ReactiveCocoa/UI (= 2.5)
-  - ReactiveCocoa/Core (2.5):
-    - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.5)
-  - ReactiveCocoa/UI (2.5):
-    - ReactiveCocoa/Core
+  - ReactiveObjC (2.1.2)
   - zipzap (8.1.1)
 
 DEPENDENCIES:
   - MBProgressHUD
-  - ReactiveBeaver (from `https://github.com/skyylex/ReactiveBeaver`)
+  - ReactiveBeaver (from `https://github.com/skyylex/ReactiveBeaver`, branch `master`)
 
 EXTERNAL SOURCES:
   ReactiveBeaver:
+    :branch: master
     :git: https://github.com/skyylex/ReactiveBeaver
 
 CHECKOUT OPTIONS:
   ReactiveBeaver:
-    :commit: 065331efe37c3f148a876f0d34c000a04ad1fed3
+    :commit: b83092b9af25e1bbb83dec691b4dee85e01b2407
     :git: https://github.com/skyylex/ReactiveBeaver
 
 SPEC CHECKSUMS:
@@ -50,10 +45,10 @@ SPEC CHECKSUMS:
   KSCrypto: 6566ebb113b05106d6963031edd3bbc30809668f
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  ReactiveBeaver: 1693613b89d154a6bb78bf636d1ebd7fdddc80a6
-  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  ReactiveBeaver: c925bd8d17e7e3cba58944282736c4e583485244
+  ReactiveObjC: 7b6782ae39f9ac0f57205c3b0c0b69b9dd7048c0
   zipzap: 940162d9c9c60472c2eab341385e4214da0fdf1c
 
-PODFILE CHECKSUM: c30721309248ecc7f7856b479e6c84a8a9c4fce6
+PODFILE CHECKSUM: afa9ed91b5f5dd2d80f01bcede97a986dc30b897
 
 COCOAPODS: 1.1.1

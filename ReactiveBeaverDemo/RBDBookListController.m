@@ -42,14 +42,16 @@
 - (void)prepareViewModel {
     self.viewModel = [RBDBookListViewModel new];
     
-    [[self.viewModel.parsingStartTrigger flattenMap:^RACStream *(id value) {
+    [[self.viewModel.parsingStartTrigger flattenMap:^__kindof RACSignal * _Nullable(id  _Nullable _) {
         return [self showHUDAction];
     }] subscribeNext:^(id x) {}];
     
     @weakify(self);
-    [[self.viewModel.parsingEndTrigger flattenMap:^RACStream *(RBEpub *epub) {
+    [[self.viewModel.parsingEndTrigger flattenMap:^__kindof RACSignal * _Nullable(id  _Nullable value) {
+        RBEpub *epub = (RBEpub *)value;
+        
         @strongify(self);
-        return [[self hideHUDAction] flattenMap:^RACStream *(id _) {
+        return [[self hideHUDAction] flattenMap:^__kindof RACStream *(id _) {
             @strongify(self);
             return [self showDetailsController:epub];
         }];
@@ -87,7 +89,7 @@
 
 - (RACSignal *)showDetailsController:(RBEpub *)epub {
     RACSignal *transportSignal = [RACSignal return:RACTuplePack(self.navigationController, self.storyboard, epub)];
-    RACSignal *showAction = [transportSignal flattenMap:^RACStream *(RACTuple *tuple) {
+    RACSignal *showAction = [transportSignal flattenMap:^__kindof RACStream *(RACTuple *tuple) {
         UINavigationController *presenter = tuple.first;
         UIStoryboard *storyboard = tuple.second;
         
@@ -104,8 +106,8 @@
 
 - (RACSignal *)showHUDAction {
     RACSignal *currentViewSignal = [RACSignal return:self.tableView];
-    return [currentViewSignal flattenMap:^RACStream *(UIView *view) {
-        return [[RACSignal return:[RACUnit defaultUnit]].deliverOnMainThread flattenMap:^RACStream *(id value) {
+    return [currentViewSignal flattenMap:^__kindof RACStream *(UIView *view) {
+        return [[RACSignal return:[RACUnit defaultUnit]].deliverOnMainThread flattenMap:^__kindof RACStream *(id value) {
             return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
                 [MBProgressHUD showHUDAddedTo:view animated:YES];
                 
@@ -120,8 +122,8 @@
 
 - (RACSignal *)hideHUDAction {
     RACSignal *currentViewSignal = [RACSignal return:self.tableView];
-    return [currentViewSignal flattenMap:^RACStream *(UIView *view) {
-        return [[RACSignal return:[RACUnit defaultUnit]].deliverOnMainThread flattenMap:^RACStream *(id value) {
+    return [currentViewSignal flattenMap:^__kindof RACStream *(UIView *view) {
+        return [[RACSignal return:[RACUnit defaultUnit]].deliverOnMainThread flattenMap:^__kindof RACStream *(id value) {
             return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
                 [MBProgressHUD hideAllHUDsForView:view animated:YES];
                 
