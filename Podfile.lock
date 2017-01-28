@@ -1,0 +1,59 @@
+PODS:
+  - CocoaLumberjack (2.4.0):
+    - CocoaLumberjack/Default (= 2.4.0)
+    - CocoaLumberjack/Extensions (= 2.4.0)
+  - CocoaLumberjack/Core (2.4.0)
+  - CocoaLumberjack/Default (2.4.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.4.0):
+    - CocoaLumberjack/Default
+  - KissXML (5.1.2):
+    - KissXML/Core (= 5.1.2)
+  - KissXML/Core (5.1.2)
+  - KSCrypto (1.2.2)
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - MBProgressHUD (1.0.0)
+  - ReactiveBeaver (0.1.1):
+    - CocoaLumberjack (~> 2.0)
+    - KissXML (~> 5.0)
+    - KSCrypto (~> 1.2.2)
+    - Mantle (~> 2.0)
+    - ReactiveCocoa (~> 2.5)
+    - zipzap (~> 8.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - zipzap (8.1.1)
+
+DEPENDENCIES:
+  - MBProgressHUD
+  - ReactiveBeaver (from `https://github.com/skyylex/ReactiveBeaver`)
+
+EXTERNAL SOURCES:
+  ReactiveBeaver:
+    :git: https://github.com/skyylex/ReactiveBeaver
+
+CHECKOUT OPTIONS:
+  ReactiveBeaver:
+    :commit: 065331efe37c3f148a876f0d34c000a04ad1fed3
+    :git: https://github.com/skyylex/ReactiveBeaver
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: aa9dcab71bdf9eaf2a63bbd9ddc87863efe45457
+  KissXML: 246c842586bb77110e04fb88e19376d96245c856
+  KSCrypto: 6566ebb113b05106d6963031edd3bbc30809668f
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  ReactiveBeaver: 1693613b89d154a6bb78bf636d1ebd7fdddc80a6
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  zipzap: 940162d9c9c60472c2eab341385e4214da0fdf1c
+
+PODFILE CHECKSUM: c30721309248ecc7f7856b479e6c84a8a9c4fce6
+
+COCOAPODS: 1.1.1
