@@ -16,6 +16,7 @@
 		940239C21E3CE7F900821A4E /* RBDBookListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940239BA1E3CE7F900821A4E /* RBDBookListController.m */; };
 		940239C31E3CE7F900821A4E /* RBDBookListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 940239BC1E3CE7F900821A4E /* RBDBookListViewModel.m */; };
 		940239C41E3CE7F900821A4E /* RBDDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940239BE1E3CE7F900821A4E /* RBDDetailsController.m */; };
+		9403E5C81E41C7340069CBD5 /* moby-dick.epub in Resources */ = {isa = PBXBuildFile; fileRef = 9403E5C71E41C7340069CBD5 /* moby-dick.epub */; };
 		DC8314020E596F1B95EE6D30 /* libPods-ReactiveBeaverDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C62FE3A39C5F6EA96F6BC7DD /* libPods-ReactiveBeaverDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		940239BC1E3CE7F900821A4E /* RBDBookListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBDBookListViewModel.m; sourceTree = "<group>"; };
 		940239BD1E3CE7F900821A4E /* RBDDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBDDetailsController.h; sourceTree = "<group>"; };
 		940239BE1E3CE7F900821A4E /* RBDDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBDDetailsController.m; sourceTree = "<group>"; };
+		9403E5C71E41C7340069CBD5 /* moby-dick.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "moby-dick.epub"; sourceTree = "<group>"; };
 		B42764896DD76B37B411D9CD /* Pods-ReactiveBeaverDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveBeaverDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveBeaverDemo/Pods-ReactiveBeaverDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C62FE3A39C5F6EA96F6BC7DD /* libPods-ReactiveBeaverDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveBeaverDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,6 +67,7 @@
 		940239941E3CE77100821A4E = {
 			isa = PBXGroup;
 			children = (
+				9403E5C61E41C6FC0069CBD5 /* BookSources */,
 				9402399F1E3CE77100821A4E /* ReactiveBeaverDemo */,
 				9402399E1E3CE77100821A4E /* Products */,
 				6EF847F5E5EA14DF3ADC3B80 /* Pods */,
@@ -108,6 +111,14 @@
 				940239A11E3CE77100821A4E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9403E5C61E41C6FC0069CBD5 /* BookSources */ = {
+			isa = PBXGroup;
+			children = (
+				9403E5C71E41C7340069CBD5 /* moby-dick.epub */,
+			);
+			path = BookSources;
 			sourceTree = "<group>";
 		};
 		9CE0BBA21E4D6AE440FA762A /* Frameworks */ = {
@@ -183,6 +194,7 @@
 				940239B01E3CE77100821A4E /* LaunchScreen.storyboard in Resources */,
 				940239AD1E3CE77100821A4E /* Assets.xcassets in Resources */,
 				940239AB1E3CE77100821A4E /* Main.storyboard in Resources */,
+				9403E5C81E41C7340069CBD5 /* moby-dick.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
